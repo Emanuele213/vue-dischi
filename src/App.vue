@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HeaderPage />
-    <MainPage />
+    <HeaderPage @change="change" />
+    <MainPage :selected-value="valueSong" />
   </div>
 </template>
 
@@ -13,6 +13,16 @@ export default {
   components: {
     HeaderPage,
     MainPage,
+  },
+  data() {
+    return {
+      valueSong: 'all',
+    };
+  },
+  methods: {
+    change(index) {
+      this.valueSong = index;
+    },
   },
 };
 </script>
