@@ -1,7 +1,7 @@
 <template>
   <header class="bg_ondark">
     <div
-      class="container container-md container-xl d-flex justify-content-between align-items-center"
+      class="container d-flex justify-content-between align-items-center"
     >
       <img
         src="@/assets/img/logo-small.svg"

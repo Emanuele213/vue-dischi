@@ -1,9 +1,9 @@
 <template>
   <main class="bg_darkblue">
-    <div class="container container-md container-xl container-xxl h-100">
+    <div class="container h-100">
       <div
         v-if="arrSong && selectedValue === 'all'"
-        class="row row-cols-5"
+        class="row row-cols-5 justify-content-center"
       >
         <SongCard
           v-for="song in arrSong"
@@ -16,7 +16,7 @@
       </div>
       <div
         v-if="arrSong"
-        class="row row-cols-5"
+        class="row row-cols-5 justify-content-center"
       >
         <SongCard
           v-for="song in newArrSong"
