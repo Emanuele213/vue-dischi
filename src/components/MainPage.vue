@@ -15,7 +15,7 @@
         />
       </div>
       <div
-        v-else-if="arrSong"
+        v-if="arrSong"
         class="row row-cols-5"
       >
         <SongCard
